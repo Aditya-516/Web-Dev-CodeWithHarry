@@ -1,13 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="STYLE.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aditya Palve — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi expedita nobis, molestias dolores voluptate officia dignissimos perferendis quia similique eius cupiditate quam dicta dolorem velit amet ratione incidunt, voluptas fugiat. Error, tenetur quidem doloribus adipisci laudantium ipsa impedit eius quasi vero a beatae similique deserunt!</p>
-    <script src="SCRIPT.JS"></script>
+  <!-- HEADER -->
+  <header id="top">
+    <div class="container">
+      <h1>Aditya Palve</h1>
+      <p>Computer Engineering Student • Full-Stack Learner • DSA Enthusiast</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>
+      I'm a 3rd-year Computer Engineering student passionate about building 
+      web applications and solving problems with Data Structures & Algorithms.
+      Currently learning full-stack development and aiming for a high-paying job in tech.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🎬 Movie Recommendation Website</h3>
+        <p>React-based project showing recommended movies with API integration.</p>
+      </div>
+      <div class="card">
+        <h3>📘 HTML Study Notes</h3>
+        <p>Static website covering HTML basics, tables, and forms for beginners.</p>
+      </div>
+      <div class="card">
+        <h3>💊 Pharmacy Management System</h3>
+        <p>College project built with Java and MySQL to manage pharmacy records.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">Frontend: HTML, CSS</div>
+      <div class="card">Backend: Node.js (Learning)</div>
+      <div class="card">Languages: C++, Python</div>
+      <div class="card">DSA: Arrays, Graphs, Recursion</div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="fade-in">
+    <h2>Education</h2>
+    <ul>
+      <li>B.E. — Computer Engineering, SPPU (3rd Year)</li>
+      <li>Relevant Subjects: OS, DBMS, Microprocessors, Software Engineering</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="you@example.com" required>
+
+      <label for="msg">Message</label>
+      <textarea id="msg" rows="5" placeholder="Your message"></textarea>
+
+      <input type="submit" value="Send Message">
+      <p id="form-status"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Aditya Palve | Built with ❤️ using HTML, CSS & JS</p>
+    <p><a href="#top">Back to top ↑</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
