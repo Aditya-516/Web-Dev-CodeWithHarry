@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 400px;
+            width: 500px;
+            display: grid;
+            grid-template-columns: [pehla]100px [dusra]100px [tisra]100px [choutha]100px [pachva]100px;
+            grid-template-rows: 100px 100px 100px 100px 100px ;
+        }
+        .items{
+            background-color: aqua;
+            text-align: center;
+            border: 2px solid yellow;
+            height: 50px;
+            width: 50px;
+            /* margin: 10px; */
+        }
+        .item-4{
+            grid-row: 1/2;
+            grid-column: pehla/dusra;
+        }
+        .item-1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+        <div class="items">6</div>
+        <div class="items">7</div>
+        <div class="items">8</div>
+        <div class="items">9</div>
+        <div class="items">10</div>
+        <div class="items">11</div>
+        <div class="items">12</div>
+        <div class="items">13</div>
+        <div class="items">14</div>
+        <div class="items">15</div>
+        <div class="items">16</div>
+        <div class="items">17</div>
+        <div class="items">18</div>
+        <div class="items">19</div>
+        <div class="items">20</div>
+    </div>
+</body>
+</html>

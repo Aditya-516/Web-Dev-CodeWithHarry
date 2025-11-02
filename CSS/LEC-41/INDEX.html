@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Navbar</title>
+<style>
+  /* Reset default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header */
+  header {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+  }
+
+  /* Flex container */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Logo */
+  .logo img {
+    height: 50px;
+  }
+
+  /* Nav menu */
+  .menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+  }
+
+  /* Dropdown styling */
+  .menu li {
+    position: relative;
+  }
+
+  .menu li select {
+    margin-right: 5px;
+  }
+
+  /* Download button */
+  .download-btn {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .download-btn:hover {
+    background-color: #0056b3;
+  }
+
+  /* Language selector */
+  .lang::before {
+    content: "🌐 ";
+    margin-right: 5px;
+  }
+
+  /* Responsive: stack menu on small screens */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .menu {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .download-btn {
+      margin-top: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="Frame-1-2.png" alt="Logo">
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul class="menu">
+      <li><select><option>Product 1</option></select> Product</li>
+      <li><select><option>Pricing 1</option></select> Pricing</li>
+      <li><select><option>Resource 1</option></select> Resources</li>
+      <li><select><option>Company 1</option></select> Our Company</li>
+      <li><a href="#" class="download-btn">DOWNLOAD</a></li>
+      <li class="lang">ENGLISH</li>
+    </ul>
+  </nav>
+</header>
+<main></main>
+<footer></footer>
+</body>
+</html>
